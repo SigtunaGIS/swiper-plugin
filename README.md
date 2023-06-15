@@ -2,7 +2,16 @@
 
 Swiper plugin can be used to compare two different views in Origo.
 
+## Download the plugin
+
+- Download the code.
+- Unpack it to your local folder.
+- Open in your code editor or command prompt and run "npm install" and then "npm run build".
+- Copy the build folder and paste it in a plugins folder in your Origo project.
+
 ## To use the plugin
+
+Be sure to edit your folders and filenames for your project.
 
 In the Origo project index.html import swiper component
 
