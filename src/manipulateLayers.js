@@ -5,7 +5,7 @@ const ManipulateLayers = function ManipulateLayers(viewer, origoPath) {
   const _origoPath = origoPath;
 
   function createSwiperLayers() {
-    let url = window.location.href + '\\' + _origoPath;
+    let url = _origoPath;
     if (window.location.hash) {
       const urlParams = viewer.permalink.parsePermalink(window.location.href);
       if (urlParams.map) {
