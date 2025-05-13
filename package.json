@@ -14,23 +14,23 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.4.21",
     "exports-loader": "^5.0.0",
     "imports-loader": "^5.0.0",
-    "mini-css-extract-plugin": "^2.9.0",
+    "mini-css-extract-plugin": "^2.9.2",
     "node-sass": "^9.0.0",
-    "postcss": "^8.4.41",
-    "prettier": "3.3.3",
-    "webpack": "^5.93.0",
+    "postcss": "^8.5.3",
+    "prettier": "3.5.3",
+    "webpack": "^5.99.8",
     "webpack-bundle-analyzer": "^4.10.2",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1",
     "webpack-merge": "^6.0.1"
   },
   "dependencies": {
-    "core-js": "^3.38.0",
-    "ol": "^9.1.0",
-    "ol-ext": "^4.0.21",
+    "core-js": "^3.42.0",
+    "ol": "^10.5.0",
+    "ol-ext": "^4.0.31",
     "whatwg-fetch": "^3.6.20"
   }
 }
