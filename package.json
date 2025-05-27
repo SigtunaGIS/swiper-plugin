@@ -8,8 +8,8 @@
     "watch-js": "webpack-cli serve --config ./tasks/webpack.dev.js --mode development",
     "build": "webpack --config ./tasks/webpack.prod.js && npm run build-sass",
     "build:dev": "webpack --config ./tasks/webpack.dev.js --mode development && npm run prebuild-sass",
-    "prebuild-sass": "node-sass --include-path scss scss/swiper-plugin.scss ../origo/plugins/swiper.css",
-    "build-sass": "node-sass --include-path scss scss/swiper-plugin.scss build/css/swiper.css"
+    "prebuild-sass": "sass --load-path scss --load-path . scss/swiper-plugin.scss ../origo/plugins/swiper.css",
+    "build-sass": "sass --load-path scss --load-path . scss/swiper-plugin.scss build/css/swiper.css"
   },
   "author": "",
   "license": "MIT",
@@ -18,9 +18,9 @@
     "exports-loader": "^5.0.0",
     "imports-loader": "^5.0.0",
     "mini-css-extract-plugin": "^2.9.2",
-    "node-sass": "^9.0.0",
     "postcss": "^8.5.3",
     "prettier": "3.5.3",
+    "sass-embedded": "^1.82.0",
     "webpack": "^5.99.8",
     "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^6.0.1",
