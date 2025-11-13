@@ -89,7 +89,7 @@ const SwiperLegend = function SwiperLegend(options = {
   function renderLayersList(swiperLayers) {
     contentContainerEl.textContent = '';
 
-    const keys = Object.keys(swiperLayers);
+    const keys = Object.keys(swiperLayers).reverse();
     keys.forEach(layerId => {
       const swLayer = swiperLayers[layerId];
       const legendLayersListItem = document.createElement('li');
