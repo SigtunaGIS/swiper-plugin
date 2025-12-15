@@ -89,7 +89,15 @@ const SwiperLegend = function SwiperLegend(options = {
   function renderLayersList(swiperLayers) {
     contentContainerEl.textContent = '';
 
-    const keys = Object.keys(swiperLayers);
+    let keys = (options.isInlineConfig ? 
+      Object.keys(swiperLayers) : 
+      Object.keys(swiperLayers).reverse());
+    const defaultLayerKey = keys.find(key => 
+      key.replace('__swiper', '').toLowerCase() === (options.defaultLayer || '').toLowerCase()
+    );
+    if (defaultLayerKey) {
+      keys = [defaultLayerKey, ...keys.filter(k => k !== defaultLayerKey)];
+    }
     keys.forEach(layerId => {
       const swLayer = swiperLayers[layerId];
       const legendLayersListItem = document.createElement('li');
