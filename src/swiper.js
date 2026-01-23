@@ -661,11 +661,7 @@ const Swiper = function Swiper({  circleRadius = 50,
         });
       }
 
-      swiperLegend = SwiperLegend({
-        showLayer: resetSwiperLayer, 
-        defaultLayer: defaultLayer,
-        isInlineConfig: typeof origoConfigPath === 'object'
-      });
+      swiperLegend = SwiperLegend({showLayer: resetSwiperLayer});
 
       swiperLegendButton = Origo.ui.Button({
         cls: 'o-measure padding-small margin-bottom-smaller icon-smaller round light box-shadow hidden',
