@@ -37,7 +37,7 @@ const ManipulateLayers = function ManipulateLayers(viewer, origoConfig) {
       }
       const searchurlParams = new URLSearchParams(window.location.search);
       if (searchurlParams.has('mapStateId')) {
-        const fullUrl = new URL(_origoPath, location.origin + location.pathname);
+        const fullUrl = new URL(_origoConfig, location.origin + location.pathname);
         fullUrl.search = searchurlParams.toString();
         url = fullUrl.href;
       }
