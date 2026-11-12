@@ -5,7 +5,7 @@
   "main": "swiper.js",
   "scripts": {
     "start": "npm run watch-js",
-    "watch-js": "webpack-cli serve --config ./tasks/webpack.dev.js --mode development",
+    "watch-js": "webpack serve --config ./tasks/webpack.dev.js --mode development",
     "build": "webpack --config ./tasks/webpack.prod.js && npm run build-sass",
     "build:dev": "webpack --config ./tasks/webpack.dev.js --mode development && npm run prebuild-sass",
     "prebuild-sass": "sass --load-path scss --load-path . scss/swiper-plugin.scss ../origo/plugins/swiper.css",
@@ -14,23 +14,26 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
+    "autoprefixer": "^10.6.2",
     "exports-loader": "^5.0.0",
     "imports-loader": "^5.0.0",
-    "mini-css-extract-plugin": "^2.9.4",
-    "postcss": "^8.5.6",
-    "prettier": "3.6.2",
-    "sass-embedded": "^1.92.1",
-    "webpack": "^5.105.0",
-    "webpack-bundle-analyzer": "^4.10.2",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.4",
+    "mini-css-extract-plugin": "^2.10.2",
+    "postcss": "^8.5.32",
+    "prettier": "3.10.1",
+    "sass-embedded": "^1.108.2",
+    "webpack": "^5.112.2",
+    "webpack-bundle-analyzer": "^5.4.2",
+    "webpack-cli": "^7.3.1",
+    "webpack-dev-server": "^6.1.0",
     "webpack-merge": "^6.0.1"
   },
   "dependencies": {
-    "core-js": "^3.45.1",
-    "ol": "^10.6.1",
-    "ol-ext": "^4.0.35",
+    "core-js": "^3.51.0",
+    "ol": "^10.11.0",
+    "ol-ext": "^4.0.39",
     "whatwg-fetch": "^3.6.20"
+  },
+  "allowScripts": {
+    "core-js@3.51.0": true
   }
 }
